@@ -53,3 +53,6 @@ setnames(data_set_2, old = names(data_set_2[,-c(1,2)]), new = paste(names(data_s
 # Ordering datasets
 setorder(data_set_1, subject, activity_name)
 setorder(data_set_2, subject, activity_name)
+
+# Saving data_set_2 into tidy_data.txt
+fwrite(data_set_2, file = "tidy_data.txt")
